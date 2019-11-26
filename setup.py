@@ -8,7 +8,7 @@ AUTHOR = "Ailln"
 EMAIL = "kinggreenhall@gmail.com"
 URL = "https://github.com/Ailln/two"
 LICENSE = "MIT License"
-DESCRIPTION = "two."
+DESCRIPTION = "😏随机一句「中二」的台词！"
 
 if __name__ == "__main__":
     setup(

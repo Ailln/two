@@ -1,9 +1,8 @@
 include LICENSE
 include README.md
 include requirements.txt
-include two/src/*.txt
 
-recursive-include package_name *
+recursive-include two *
 
 recursive-exclude * *.pyc
 recursive-exclude * .DS_Store
