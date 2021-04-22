@@ -1,10 +1,8 @@
-from . import shell
-from . import version
 from .util import two
 
-__version__ = version.VERSION
+__version__ = "0.1.3"
 
 __all__ = [
-    "shell",
-    "version"
+    "__version__",
+    "two"
 ]

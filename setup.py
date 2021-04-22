@@ -1,8 +1,6 @@
 from setuptools import setup
 from setuptools import find_packages
 
-from two import version
-
 NAME = "two"
 AUTHOR = "Ailln"
 EMAIL = "kinggreenhall@gmail.com"
@@ -13,7 +11,7 @@ DESCRIPTION = "😏随机一句「中二」的台词！"
 if __name__ == "__main__":
     setup(
         name=NAME,
-        version=version.VERSION,
+        version="0.1.3",
         author=AUTHOR,
         author_email=EMAIL,
         url=URL,
@@ -24,18 +22,13 @@ if __name__ == "__main__":
         install_requires=open("./requirements.txt", "r").read().splitlines(),
         long_description=open("./README.md", "r").read(),
         long_description_content_type='text/markdown',
-        entry_points={
-            "console_scripts": [
-                "two=two.shell:run"
-            ]
-        },
         package_data={
             "two": ["src/*.txt"]
         },
         zip_safe=True,
         classifiers=[
             "Programming Language :: Python :: 3",
-            "License :: OSI Approved :: MIT License",
+            f"License :: OSI Approved :: {LICENSE}",
             "Operating System :: OS Independent",
         ]
     )
